@@ -2,17 +2,8 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const pool = require("./db");
-const {
-  createInventoryItem,
-  getAllInventoryItems,
-  getInventoryItemById,
-  updateInventoryItem,
-  updateConsumedStatus,
-  deleteInventoryItem,
-  deleteAllInventoryItems,
-} = require("./controller/controller_inventory");
-
-// ... (other code remains the same)
+const inventoryRoutes = require("./routes/inventory_routes"); // Import the inventory routes file
+// Import other route files as needed
 
 async function checkAndCreateInventoryTable() {
   try {
@@ -40,22 +31,15 @@ async function checkAndCreateInventoryTable() {
 
 checkAndCreateInventoryTable();
 
-//middleware
+// Middleware
 app.use(cors());
 app.use(express.json());
 
-// Routers
+// Use the inventory routes
+app.use("/inventory", inventoryRoutes);
 
-app.post("/inventory", createInventoryItem);
-app.get("/inventory", getAllInventoryItems);
-app.get("/inventory/:id", getInventoryItemById);
-app.put("/inventory/:id", updateInventoryItem);
-app.put("/inventory/:id/consumed", updateConsumedStatus);
-app.delete("/inventory/:id", deleteInventoryItem);
-app.delete("/inventory", deleteAllInventoryItems);
-
-// ... (other code remains the same)
+// Use other routes as needed
 
 app.listen(5000, () => {
-  console.log("server has started on port 5000");
+  console.log("Server has started on port 5000");
 });
