@@ -1,0 +1,116 @@
+.header .home {
+    height: calc(100vh - 8.5rem);
+  }
+  .header .home .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 95%;
+  }
+  .header .home .row .faster {
+    width: 22rem;
+    background-color: #c0f2ff;
+    color: var(--primary-color);
+    font-size: 1.625rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5rem;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+  .header .home .row .faster .image {
+    position: absolute;
+    top: 50%;
+    right: -0.1rem;
+    transform: translateY(-50%);
+    background-color: var(--white-color);
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    justify-content: center;
+  }
+  .header .home .row .faster .image img {
+    height: 3rem;
+  }
+  .header .home .row h1 {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+  .header .home .row h1 span {
+    color: var(--primary-color);
+  }
+  .header .home .row p {
+    margin-bottom: 2.5rem;
+    margin-left: 1rem;
+    width: 80%;
+  }
+  .header .home .row .btn {
+    padding: 1.2rem 2.5rem;
+    margin-left: 1rem;
+  }
+
+  .col img {
+    max-width: 110% !important;
+  }
+  
+  @media (max-width: 1300px) {
+    .header .home .row h1 {
+      font-size: 4.5rem;
+      margin-bottom: 2rem;
+    }
+    .header .home .row .faster {
+      width: 20rem;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .header .home .row .faster .image {
+      width: 4rem;
+      height: 4rem;
+    }
+    .col img {
+        max-width: 100% !important;
+      }
+  }
+  @media (max-width: 996px) {
+    .header .home .row .col img {
+      width: 40rem;
+    }
+    .header .home .row h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+    .header .home .row .btn {
+      padding: 0.7rem 1.5rem;
+    }
+    .col img {
+        max-width: 100% !important;
+      }
+  }
+  @media (max-width: 800px) {
+    .header .home {
+      height: calc(100vh + 12rem);
+      padding-top: 4rem;
+    }
+    .header .home .row {
+      grid-template-columns: 1fr;
+    }
+    .header .home .row h1 {
+      font-size: 3rem;
+    }
+    .header .home .row h1 br {
+      display: none;
+    }
+    .header .home .row p {
+      width: 100%;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .header .home .row .btn {
+      font-size: 1.5rem;
+    }
+    .header .home .row .col:last-child {
+      text-align: center;
+    }
+    .col img {
+        max-width: 100% !important;
+      }
+  }

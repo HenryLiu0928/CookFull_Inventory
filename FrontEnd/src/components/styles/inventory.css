@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://unicons.iconscout.com/release/v4.0.0/css/line.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* .btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 0.7rem 2.5rem;
+  border-radius: 1rem;
+  font-size: inherit;
+} */
+
+.inventory-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  text-align: center;
+}
+blockquote {
+  color: rgb(181, 181, 181);
+  margin-bottom: 2em;
+}
+.title {
+  padding: 0 4rem;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+  margin-top: 3em;
+  margin-bottom: 0;
+  font-size: 30px !important;
+}
+.inventory-search-box {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: stretch;
+  width: 740px;
+}
+.input-box-inventory {
+  position: relative;
+  height: 65px;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.input-box-inventory form {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+}
+.input-box-inventory .button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-box-inventory select {
+  height: 100%;
+  width: 10%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  position: relative;
+  margin-left: 10px;
+  /* border: none; */
+  /* padding: 0 155px 0 65px; */
+  /* background-color: transparent; */
+}
+
+.input-box-inventory input {
+  height: 100%;
+  width: 15%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 10px 0 20px;
+  background-color: transparent;
+}
+.input-box-inventory .description {
+  height: 100%;
+  width: 50%;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 25px 0 25px;
+  background-color: transparent;
+}
+.input-box-inventory .button {
+  right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #4070f4;
+  cursor: pointer;
+}
+
+.item-quantity-inventory {
+  height: 150%;
+  width: 15%;
+  outline: none;
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+  /* padding: 0 10px 0 20px; */
+  background-color: gainsboro;
+}
+
+.input-box-inventory .button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+.custom-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  color: #212529;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-table th {
+  padding: 0.75rem;
+  vertical-align: top;
+}
+.custom-table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.custom-table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.custom-table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.custom-table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.custom-table .update {
+  right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #4070f4;
+  cursor: pointer;
+}
+
+.custom-table .delete {
+  background-color: white;
+  right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.filter select {
+  position: relative;
+  font-size: 16px;
+
+  height: 45px;
+  max-width: 900px;
+  width: 30%;
+  background: #fff;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.filter button {
+  right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: red;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+  .input-box-inventory {
+    height: 66px;
+    margin: 0 8px;
+  }
+  .input-box-inventory i {
+    left: 12px;
+    font-size: 25px;
+  }
+  .input-box-inventory input {
+    padding: 0 112px 0 50px;
+  }
+  .input-box-inventory .button {
+    right: 12px;
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
